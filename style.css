@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+body {
+  font-family: "Pacifico", cursive;
+  text-align: center;
+  background-color: #ffdbe8;
+  overflow: hidden;
+  
+}
+
+.container {
+  position: relative;
+  width: 90%;
+  max-width: 500px;
+  height: 250px;
+  margin: 50px auto;
+  padding: 40px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  box-shadow: 25px 25px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.459);
+}
+
+button {
+  font-family: "Pacifico", cursive;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: 1px solid rgba(0, 0, 0, 0.516);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#yesBtn {
+  background-color: #ff40808f;
+  color: rgb(57, 54, 54);
+}
+
+#noBtn {
+  background-color: #ff52528d;
+  color: rgb(73, 65, 65);
+}
+
+@keyframes shrink {
+  100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
+.confetti {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  background-color: rgb(252, 252, 252);
+  opacity: 1;
+  position: absolute;
+  top: -10px;
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
+}
